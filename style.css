@@ -1,0 +1,158 @@
+
+body {
+  background:#000;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: ' sans-serif';
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.content {
+  margin-top: 60px; /* Adjust the margin as needed */
+}
+.content{
+  font-size: small;
+  font-weight: lighter;
+
+}
+
+.info {
+  margin-top: 60px; /* Adjust the margin as needed */
+}
+.info a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+.info p {
+position: relative;
+animation: slideInLeft 6s ease-in-out;
+}
+
+@keyframes slideInLeft {
+0% {
+opacity: 0;
+transform: translateX(-100%);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #000;
+position: relative;
+}
+
+.social-icons i {
+opacity: 0;
+transform: translateX(100%);
+animation: slideInRight 5s ease-in-out forwards;
+}
+
+@keyframes slideInRight {
+0% {
+opacity: 0;
+transform: translateX(100%);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+
+button {
+background: none;
+border: none;
+cursor: pointer;
+color: #fff;
+font-size: 24px;
+margin: 0 10px;
+transition: color 0.3s, transform 0.3s;
+}
+
+button:hover {
+color: #fff;
+transform: scale(1.2) translateY(-5px);
+}
+
+
+.hero img {
+width: 100%;
+height: auto;
+max-width: 600px;
+max-height: 400px;
+animation: zoomInDown 6s ease-out; /* Adjust the duration as needed */
+}
+
+@keyframes zoomInDown {
+0% {
+transform: translateY(-100%);
+opacity: 0;
+}
+100% {
+transform: translateY(0);
+opacity: 1;
+}
+}
+
+
+p {
+font-size: medium;
+  font-weight: lighter;
+text-align: center;
+}
+
+svg {
+  font-family: 'Russo One', sans-serif;
+  position: absolute; 
+  width: 100%; height: 100%;
+}
+svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #fff;
+  font-size: 140px;
+}
+@keyframes stroke {
+  0%   {
+    fill: rgba(72,138,20,0); stroke:#fff;
+    stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+  }
+  70%  {fill: rgba(72,138,20,0); stroke:#fff; }
+  80%  {fill: rgba(72,138,20,0); stroke: #fff; stroke-width: 3; }
+  100% {
+    fill: #fff; stroke: rgba(54,95,160,0); 
+    stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+  }
+}
+
+
+
