@@ -1,0 +1,1120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+text-decoration: none;
+scroll-behavior: smooth;
+list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body{
+
+    background-color: black;
+overflow-x: hidden;
+}
+/* 
+section{
+    padding: 110px 16% 90px;
+} */
+.header.scrolled {
+    background-color: #333; /* Darker background on scroll */
+}
+
+/* 
+:root{
+    --text-color:#fff;
+    --bg-color:#1b1f24;
+    --second-bg-color:#22282f;
+    --main-color:#13bbff;
+    --other-color:#c3cad5;
+    --h1-font: 4.5rem;
+    --h2-font:2.9rem;
+    --p-font:1rem;
+ 
+ } */
+ /* body{
+    color:var(--text-color);
+    background: var(--bg-color);
+ }  */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: 1000;
+    transition: all .50s ease;
+}
+nav a{
+    text-decoration: none;
+}
+.nav{
+    height: 100px;
+    
+}
+
+.nav-logo, .nav-burger,
+.nav-close{
+    color: black;
+}
+/*  */
+
+
+/*  */
+.nav-data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: var(--p-font); */
+    /* font-weight: 500; */
+    /* color: var(--other-color); */
+    margin-left: 40px;
+    transition: all  .50s ease;
+}
+
+.nav-logo {
+    display: inline-block;
+    align-items: center;
+    column-gap: .25rem;
+    /* font-weight: 18px; */
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.nav-toggle{
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+.nav-burger ,
+.nav-close{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset:0;
+    margin: auto;
+    font-size: 32px;
+    cursor: pointer;
+    transition: opacity .1s transform .4s;
+}
+
+.nav-close{
+    opacity: 0;
+}
+
+/* nav bar style for mobile screen */
+@media screen and (max-width: 1118px) {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black; /* Set header background to black */
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: 1000;
+}
+.nav-logo {
+    display: inline-block;
+    align-items: center;
+    font-weight: 18px;
+    height: 60px;
+    width: 60px;
+}
+.nav-toggle {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px; /* Add margin for better alignment */
+}
+.nav-burger, .nav-close {
+    color: white; /* Set toggle icons color to white */
+    font-size: 32px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.nav-menu {
+    position: absolute;
+    left: 0;
+    top: 80px; /* Ensure the menu starts right below the header */
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+}
+.nav-menu::-webkit-scrollbar {
+    width: 0;
+}
+.nav-list {
+    background-color: black;
+    padding-top: 1rem;
+    margin: 0;
+}
+.nav-link a{
+    transition: all  .50s ease;
+}
+.nav-link {
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-bottom: 25px;
+}
+.nav-link:hover{
+    /* background-color: ; */
+
+    color: #18697C;
+    text-shadow: 3px 3px 20px #18697C, -2px 1px 30px #18697C;
+}
+}
+
+/* show menu */
+.show-menu {
+opacity: 1;
+top: 80px; /* Adjust to align with header height */
+pointer-events: initial;
+}
+
+/* show icon */
+.show-icon .nav-burger {
+opacity: 0;
+transform: rotate(90deg);
+
+}
+.show-icon .nav-close {
+opacity: 1;
+transform: rotate(90deg);
+}
+/* breakpoint */
+/* small device */
+/* for large device */
+@media screen and (min-width:1118px) {
+.header{
+    background-color: black;
+}
+.container{
+    margin-inline: auto;
+}
+.nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-toggle{
+    display: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    flex: 1;
+}
+.nav-list{
+    display: flex;
+    column-gap: 5rem;
+    font-size: 18px;
+    list-style: none;
+    margin: 0; /* Remove right margin */
+    padding: 0;
+    align-items: center;
+    justify-content: center; /* Center the links within the list */
+
+}
+.nav-link a{
+    transition: all  .50s ease;
+}
+.nav-link{
+    height: 100%;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    /* background-color: ; */
+
+    color: #18697C;
+    text-shadow: 3px 3px 20px #18697C, -2px 1px 30px #18697C;
+}
+}
+
+/* =========================================================================== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background: black; /* Background color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-heading {
+    font-size: 1.5rem; /* Responsive heading size */
+    margin-bottom: 20px;
+}
+
+.hero-paragraph {
+    font-size: 1.2rem; /* Responsive paragraph size */
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Space between buttons */
+}
+
+/* Glowing button styles */
+.explore-button {
+    padding: 15px 30px; /* Adjusted padding */
+    border-radius: 26px; /* Match the glowing button */
+    color: #fbeff9; /* Text color */
+    font-size: 16px; /* Adjust as needed */
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    background: #34343b; /* Button background */
+    border: 2px solid transparent; /* Initial border */
+    transition: all 0.3s ease;
+}
+
+.explore-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 26px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.explore-button:hover::before {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.explore-button:hover {
+    border: 2px solid #ffffff; /* Glowing border color on hover */
+}
+
+@keyframes backcolor {
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2rem; /* Smaller heading for mobile */
+    }
+
+    .hero-paragraph {
+        font-size: 1rem; /* Smaller paragraph for mobile */
+    }
+
+    .explore-button {
+        font-size: 16px; /* Adjust as needed */
+    }
+}
+
+/* ===============================about us =================================== */
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white; /* Set font color to white */
+    padding: 10px;
+}
+
+.about h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px; /* Larger font for visibility */
+    color: #ffffff; /* White color for better contrast */
+    margin-top: 40px; /* Top margin for spacing */
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 20px; /* Reduced margin to decrease gap */
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: 600px; /* Allow height to adjust automatically */
+    width: 600px;
+    display: block;
+    transition: transform 0.6s ease-in-out;
+}
+
+.about-image:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-right: 80px;
+    text-align: justify; /* Justify text to align evenly */
+    word-wrap: break-word; /* Allow words to break to the next line */
+}
+
+.about-content span {
+    font-weight: bold;
+}
+
+/* Responsive Styles for Medium Screens (Tablets) */
+@media screen and (max-width: 1024px) {
+    .about {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text within the about section */
+    }
+
+    .about h1 {
+        font-size: 32px; /* Adjusted for smaller screens */
+        margin-top: 20px; /* Add some spacing above the heading */
+    }
+
+    .about-image {
+        margin: 0; /* Remove margin for the image container */
+        margin-bottom: 20px; /* Space below the image */
+        max-width: 80%; /* Limit the image width on medium screens */
+    }
+
+    .about-image img {
+        height: 400px; /* Set a specific height for medium screens */
+        width: 400px; /* Set a specific width for medium screens */
+        display: block; /* Ensure image is treated as block element */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .about-content {
+        display: flex; /* Enable flexbox for content alignment */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center content vertically */
+        width: 100%; /* Full width for the content area */
+        padding: 0 10px; /* Add some padding for better spacing */
+    }
+
+    .about-content p {
+        font-size: 18px; /* Font size for the paragraph */
+        margin: 0; /* Remove default margin */
+        word-wrap: break-word; /* Allow words to break to the next line */
+        max-width: 90%; /* Limit the width of the paragraph for better readability */
+        text-align: justify; /* Justify text to align evenly */
+    }
+}
+
+/* Responsive Styles for Mobile Screens */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text within the about section */
+    }
+
+    .about-content {
+        display: flex; /* Enable flexbox for content alignment */
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align items */
+        justify-content: center; /* Center content vertically */
+        width: 100%; /* Full width for the content area */
+    }
+
+    .about-content p {
+        font-size: 16px; /* Font size for the paragraph */
+        margin: 0; /* Remove default margin */
+        padding: 0 10px; /* Add some padding for better spacing */
+        word-wrap: break-word; /* Allow words to break to the next line */
+        max-width: 90%; /* Limit the width of the paragraph for better readability */
+        text-align: justify; /* Justify text to align evenly */
+    }
+
+    .about h1 {
+        font-size: 28px; /* Adjust heading size */
+        margin-top: 20px; /* Space above heading */
+    }
+
+    .about-image {
+        max-width: 100%; /* Ensure the image takes full width on mobile */
+        margin: 0; /* Remove margins for mobile */
+    }
+
+    .about-image img {
+        height: 200px; /* Set a specific height for mobile screens */
+        width: 200px; /* Set a specific width for mobile screens */
+    }
+
+    /* New logo styles */
+    .about-logo {
+        margin-top: 20px; /* Space above logo */
+        width: 80%; /* Limit logo width */
+        max-width: 200px; /* Set maximum width for logo */
+    }
+}
+
+/* Responsive Styles for Large Devices */
+@media screen and (min-width: 1025px) {
+    .about h1 {
+        font-size: 50px; /* Increase heading size for large screens */
+    }
+
+    .about-content span {
+        font-size: 20px; /* Increase span font size for large screens */
+    }
+}
+
+
+/*================================= service section ====================================== */
+.container {
+    width: 100%;
+}
+
+.service-wrapper {
+    padding: 5% 10%;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+h1 span {
+    color: #18697C;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 10px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.card {
+    height: 330px;
+    width: 100%;
+    max-width: 370px;
+    background-color: black;
+    color: white;
+    padding: 3% 8%;
+    border: 0.2px solid white;
+    display: flex;
+    transition: 0.6s;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: white;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.card:hover:after {
+    width: 225%;
+    top: -125%;
+}
+
+.card i {
+    color: #18697C;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.card h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card p {
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.card:hover {
+    background-color: transparent;
+    transform: translateY(-8px);
+    border-color: white;
+}
+
+.card:hover i,
+.card:hover p,
+.card:hover h3 {
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .cards {
+        display: flex;
+        gap: 30px; /* Remove space between cards */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        padding: 0; /* Remove padding to ensure full card visibility */
+        margin: 0; /* Remove margin to ensure full card visibility */
+        align-items: center; /* Center align the cards vertically */
+        width: 100vw; /* Ensure container is full viewport width */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer and Edge */
+    }
+
+    .cards::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .pagination-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 5px;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+    }
+
+    .pagination-dot.active {
+        opacity: 1;
+        background-color: #18697C;
+    }
+
+    .card {
+        flex: 0 0 100vw; /* Each card takes up full viewport width */
+        width: 100vw; /* Card width equal to viewport width */
+        height: 260px; /* Fixed height for the card */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        scroll-snap-align: start; /* Ensure card aligns at the start when scrolled */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 5px 0px 5px; /* Remove margin to ensure full card visibility */
+        margin-top: 50px;
+    }
+
+    .card h3 {
+        text-align: center; /* Center align text */
+        font-size: 14px; /* Adjusted font size */
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 10px; /* Adjust bottom margin for spacing */
+    }
+
+    .card p {
+        font-size: 12px; /* Adjusted font size */
+        text-align: center;
+        margin-top: 0; /* Remove top margin */
+    }
+
+    .service h1 {
+        font-size: 32px; /* Reduced font size */
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr); /* Show 3 cards in one row for medium devices */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* Adjust layout for smaller devices */
+    }
+}
+
+/* clients */
+/* clients heading */
+.clients-heading{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+.clients-heading span{
+    font-size: 4rem;
+    text-align: center;
+    color:  #18697C;
+}
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    .clients-heading {
+        font-size: 2rem;
+        margin-bottom: 25px;
+        margin-top: 30px;
+    }
+
+    .clients-heading span {
+        font-size: 2rem;
+    }
+}
+/* image sliders */
+.slider {
+    background-color: black;
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 30s linear infinite; /* Adjust speed for smooth scrolling */
+    width: calc(150px * 13); /* 13 images, width based on size */
+}
+
+.slider .slide {
+    height: 120px;
+    width: 150px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Base styles for the logo images */
+.slider .slide img {
+    height: 100px; /* Default height for large and medium screens */
+    width: 100px; /* Default width for large and medium screens */
+}
+
+/* Adjustments for mobile screens */
+@media (max-width: 480px) {
+    .slider .slide img {
+        height: 50px; /* Height for mobile screens */
+        width: 50px; /* Width for mobile screens */
+    }
+    
+    .slider .slide {
+        margin: 0 -40px; /* Reduce the margin between images on mobile */
+    }
+}
+
+
+
+/* ====================================contact form================================= */
+.form-main {
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-wrapper {
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    box-shadow: 0 0 5px 5px #00000020;
+    backdrop-filter: blur(5px);
+    background-color: black;
+    border: 2px solid #18697C;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-head {
+    font-size: 40px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+    padding: 20px 25px 15px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;  /* No background color */
+    outline: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out;
+    color: white; /* Set text color to white */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    box-shadow: 0 0 10px white;
+    border-color: white;
+}
+
+/* Adjust label positioning to stay above */
+.form-label,
+.form-textarea-label {
+    position: absolute;
+    left: 25px;
+    top: -10px; /* Keep labels above input */
+    pointer-events: none;
+    font-size: 16px;
+    color: #ccc;
+    background-color: black; /* Add a background to label to avoid overlap */
+    padding: 0 4px;
+    transition: 0.3s;
+}
+
+/* Keep label above when input is focused */
+.form-input:focus ~ .form-label,
+.form-textarea:focus ~ .form-textarea-label,
+.form-input:not(:placeholder-shown) ~ .form-label,
+.form-textarea:not(:placeholder-shown) ~ .form-textarea-label {
+    top: -10px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    resize: none;
+}
+
+/* Inquiry button styling */
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0 0;
+}
+
+.btn-wrap button {
+    padding: 0 32px;
+    font-size: 18px;
+    line-height: 48px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px #00000020;
+}
+
+.btn-wrap button:hover {
+    background: white;
+    color: black;
+}
+
+/* Disabled state for Inquiry button */
+.btn-wrap button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border: 1px solid white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .main-wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-wrapper {
+        width: 90%;
+    }
+}
+
+/* For smaller mobile screens */
+@media screen and (max-width: 480px) {
+    .form-main {
+        padding: 25px 25px;
+        margin-top: -80px;
+    }
+    .main-wrapper {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .form-head {
+        font-size: 24px;
+    }
+    
+    .form-input, 
+    .form-textarea {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .btn-wrap button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+    /*  */
+    /* Footer Base Styling */
+.footer {
+    background-color: rgb(27, 26, 26);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -70px;
+}
+
+.footer-description {
+    margin: 10px 0;
+    margin-left: -70px;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-list a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.footer-links,
+.footer-services {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.footer-links p,
+.footer-services p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.footer-services li {
+    text-align: center;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    font-size: 22px;
+    margin: 15px 0;
+    padding-left: 60px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+.footer-contact address {
+    margin: 5px 0;
+    padding-left: 60px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.footer-contact address a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.copyright-link {
+    color:white;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-services,
+    .footer-contact {
+        text-align: left;
+    }
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center; /* Centers contents on small screens */
+        text-align: center; /* Ensures all content is centered on small screens */
+    }
+
+    .footer-logo,
+    .footer-description,
+    .footer-links,
+    .footer-services,
+    .footer-contact p,
+    .footer-contact address {
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    .footer-contact p,
+    .footer-contact address {
+        font-size: 20px; /* Adjust font size for mobile */
+        line-height: 1.5;
+    }
+
+    .footer-services li {
+        text-align: center;
+    }
+
+    /* Center the social links on mobile */
+    .social-list {
+        justify-content: center; /* Centers the social icons */
+    }
+}
+
+
+
+/* scrollbar styling */
+
+::-webkit-scrollbar{
+    width: 8px;
+   
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+}
+::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius: 6px;
+    
+}

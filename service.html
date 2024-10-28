@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Geek Buds Designs">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Mangalore, Bangalore">
+    <title>Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/Geekbudslogo.jpg" type="image/jpeg">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="assets/img/logo/logo2.svg">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta name="description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.geekbudsdesigns.com/">
+    <meta property="og:title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta property="og:description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=124E90CXqT3-KcDvSJxSIduMgnnaKRNSZ">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.geekbudsdesigns.com/">
+    <meta property="twitter:title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta property="twitter:description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+    <meta property="twitter:image" content="https://www.geekbudsdesigns.com/assets/img/logo/logo2.svg">
+      <!-- style -->
+      <link rel="stylesheet" href="assets/css/mainstyle.css">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+      <!-- googlefonts -->
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet">
+</head>
+<style>
+   
+/*================================= service section ====================================== */
+.container {
+    width: 100%;
+}
+
+.service-wrapper {
+    padding: 5% 10%;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+h1 span {
+    color: #18697C;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 10px;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.card {
+    height: 330px;
+    width: 100%;
+    max-width: 370px;
+    background-color: black;
+    color: white;
+    padding: 3% 8%;
+    border: 0.2px solid white;
+    display: flex;
+    transition: 0.6s;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.card:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: white;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.card:hover:after {
+    width: 225%;
+    top: -125%;
+}
+
+.card i {
+    color: #18697C;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+}
+
+.card h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card p {
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.card:hover {
+    background-color: transparent;
+    transform: translateY(-8px);
+    border-color: white;
+}
+
+.card:hover i,
+.card:hover p,
+.card:hover h3 {
+    color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .cards {
+        display: flex;
+        gap: 30px; /* Remove space between cards */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        padding: 0; /* Remove padding to ensure full card visibility */
+        margin: 0; /* Remove margin to ensure full card visibility */
+        align-items: center; /* Center align the cards vertically */
+        width: 100vw; /* Ensure container is full viewport width */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer and Edge */
+    }
+
+    .cards::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .pagination-dot {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin: 0 5px;
+        opacity: 0.5;
+        transition: opacity 0.3s ease;
+    }
+
+    .pagination-dot.active {
+        opacity: 1;
+        background-color: #18697C;
+    }
+
+    .card {
+        flex: 0 0 100vw; /* Each card takes up full viewport width */
+        width: 100vw; /* Card width equal to viewport width */
+        height: 260px; /* Fixed height for the card */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        scroll-snap-align: start; /* Ensure card aligns at the start when scrolled */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 5px 0px 5px; /* Remove margin to ensure full card visibility */
+        margin-top: 50px;
+    }
+
+    .card h3 {
+        text-align: center; /* Center align text */
+        font-size: 14px; /* Adjusted font size */
+        margin-top: 0; /* Remove top margin */
+        margin-bottom: 10px; /* Adjust bottom margin for spacing */
+    }
+
+    .card p {
+        font-size: 12px; /* Adjusted font size */
+        text-align: center;
+        margin-top: 0; /* Remove top margin */
+    }
+
+    .service h1 {
+        font-size: 32px; /* Reduced font size */
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr); /* Show 3 cards in one row for medium devices */
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* Adjust layout for smaller devices */
+    }
+}</style>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-data">
+                <img src="assets/img/Geekbudslogo.jpg" alt="" class="nav-logo">
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav-burger"></i>
+                    <i class="ri-close-line nav-close"></i>
+                </div>
+            </div>
+
+            <!-- ============nav menu============ -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="main.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li><a href="service.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   <!-- services -->
+   <div class="container" id="services1">
+    <div class="service-wrapper">
+        <div class="service" id="services">
+            <h1>Here's <span>What </span>We <span> <br>
+                    Have </span>For you...</h1>
+        </div>
+        <div class="cards">
+
+            <div class="card">
+                <i class="fas fa-seedling"></i>
+                <h3>GRAPHIC DESIGNS / BRANDING</h3>
+                <p> We transform your ideas into visual stunning designs that resonate with your brand's identity &
+                    captivate your audience.
+                </p>
+
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>WEB DESIGN & DEVELOPMENT</h3>
+                <p>We deliver tailored, responsive & high-performing websites that elevate your online presence.</p>
+
+            </div>
+            <div class="card">
+
+                <i class="fas fa-chart-line"></i>
+                <h3>DIGITAL MARKETING</h3>
+                <p>Digital marketing drives measurable growth by leveraging cutting-edge strategies & tools to
+                    enhance your online visibility, engage your audience & boost conversions.</p>
+
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h3>SOFTWARE SOLUTION</h3>
+                <p>Our software development services focus on creating scalable, efficient & customised software
+                    solutions to meet your business needs.</p>
+
+            </div>
+            <div class="card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>ADVERTISE & CAMPAIGN</h3>
+                <p>Our Advertising & campaign services are designed to amplify your brand's reach, drive targeted
+                    traffic, maximize your return on investment through strategic ad placements & compelling
+                    messages.</p>
+
+            </div>
+            <div class="card">
+
+                <i class="fas fa-camera"></i>
+                <h3>PRODUCTION HOUSE</h3>
+                <p>Our Production House service bring your creative vision to life through high-quality video,
+                    photography & multimedia content that captivates & engage your audience.</p>
+
+            </div>
+        </div>
+        </div></div>
+        <div class="pagination"></div>
+    </div>
+
+
+  <!-- footer -->
+  <footer class="footer" id="footer">
+
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2 class="footer-logo">Geek Buds Designs</h2>
+            <p class="footer-description">
+                We are a Digital Marketing Platform built with <br> dream, creativity, & innovation at its core.
+            </p>
+            <p>Follow us at:</p>
+            <ul class="social-list">
+             
+                <li>
+                    <a href="https://www.linkedin.com/company/geek-buds-designs/" class="social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/geek_buds_designs" class="social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/geekbudsdesigns" class="social-link">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    
+        <ul class="footer-links">
+            <p>Quick Links</p>
+            <li><a href="main.html" class="footer-link">Home</a></li>
+            <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+            <li><a href="service.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+        </ul>
+        <ul class="footer-services">
+            <p>Services We Offer</p>
+            <li><a href="service.html" class="footer-link">GRAPHIC DESIGNS / BRANDING</a></li>
+            <li><a href="service.html" class="footer-link">WEB DESIGN & DEVELOPMENT</a></li>
+            <li><a href="service.html" class="footer-link">DIGITAL MARKETING</a></li>
+            <li><a href="service.html" class="footer-link">SOFTWARE SOLUTION</a></li>
+            <li><a href="service.html" class="footer-link">ADVERTISE & CAMPAIGN</a></li>
+            <li><a href="service.html" class="footer-link">PRODUCTION HOUSE</a></li>
+
+        </ul>
+
+        <div class="footer-contact">
+            <p>Contact Us</p>
+            <address>
+                <i class="ri-map-pin-line"></i>  Bangalore, India<br>
+                <i class="ri-phone-fill"></i>  <a href="tel:+919632781673">+91 9632781673</a><br>
+                <!-- <a href="tel:+917899946007">+91 7899946007</a><br> -->
+                <i class="ri-mail-fill"></i>  <a href="mailto:geekbudsdesigns@gmail.com">geekbudsdesigns@gmail.com</a>
+            </address>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p class="copyright">
+            &copy; 2024 <a href="#" class="copyright-link">GeekBudsDesigns</a>. All Rights Reserved
+        </p>
+    </div>
+
+</footer>
+
+<!-- script gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!--scrolltrigger gsap  -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- script js -->
+ <script src="assets/js/gsap.js"></script>
+            <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Geek Buds Designs">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Mangalore, Bangalore">
+    <title>Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/Geekbudslogo.jpg" type="image/jpeg">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="assets/img/logo/logo2.svg">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta name="description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.geekbudsdesigns.com/">
+    <meta property="og:title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta property="og:description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=124E90CXqT3-KcDvSJxSIduMgnnaKRNSZ">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.geekbudsdesigns.com/">
+    <meta property="twitter:title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta property="twitter:description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+    <meta property="twitter:image" content="https://www.geekbudsdesigns.com/assets/img/logo/logo2.svg">
+      <!-- style -->
+      <link rel="stylesheet" href="assets/css/mainstyle.css">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+      <!-- googlefonts -->
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet">
+</head>
+<style>
+    /* ===============================about us =================================== */
+    .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: 1000;
+    transition: all .50s ease;
+}
+nav a{
+    text-decoration: none;
+}
+.nav{
+    height: 100px;
+    
+}
+
+.nav-logo, .nav-burger,
+.nav-close{
+    color: black;
+}
+/*  */
+
+
+/*  */
+.nav-data {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* font-size: var(--p-font); */
+    /* font-weight: 500; */
+    /* color: var(--other-color); */
+    margin-left: 40px;
+    transition: all  .50s ease;
+}
+
+.nav-logo {
+    display: inline-block;
+    align-items: center;
+    column-gap: .25rem;
+    /* font-weight: 18px; */
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.nav-toggle{
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+.nav-burger ,
+.nav-close{
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    inset:0;
+    margin: auto;
+    font-size: 32px;
+    cursor: pointer;
+    transition: opacity .1s transform .4s;
+}
+
+.nav-close{
+    opacity: 0;
+}
+
+/* nav bar style for mobile screen */
+@media screen and (max-width: 1118px) {
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black; /* Set header background to black */
+    box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+    z-index: 1000;
+}
+.nav-logo {
+    display: inline-block;
+    align-items: center;
+    font-weight: 18px;
+    height: 60px;
+    width: 60px;
+}
+.nav-toggle {
+    display: block;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px; /* Add margin for better alignment */
+}
+.nav-burger, .nav-close {
+    color: white; /* Set toggle icons color to white */
+    font-size: 32px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.nav-menu {
+    position: absolute;
+    left: 0;
+    top: 80px; /* Ensure the menu starts right below the header */
+    width: 100%;
+    background-color: black;
+    height: calc(100vh - 80px);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+}
+.nav-menu::-webkit-scrollbar {
+    width: 0;
+}
+.nav-list {
+    background-color: black;
+    padding-top: 1rem;
+    margin: 0;
+}
+.nav-link a{
+    transition: all  .50s ease;
+}
+.nav-link {
+    color: white;
+    background-color: black;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    margin-bottom: 25px;
+}
+.nav-link:hover{
+    /* background-color: ; */
+
+    color: #18697C;
+    text-shadow: 3px 3px 20px #18697C, -2px 1px 30px #18697C;
+}
+}
+
+/* show menu */
+.show-menu {
+opacity: 1;
+top: 80px; /* Adjust to align with header height */
+pointer-events: initial;
+}
+
+/* show icon */
+.show-icon .nav-burger {
+opacity: 0;
+transform: rotate(90deg);
+
+}
+.show-icon .nav-close {
+opacity: 1;
+transform: rotate(90deg);
+}
+/* breakpoint */
+/* small device */
+/* for large device */
+@media screen and (min-width:1118px) {
+.header{
+    background-color: black;
+}
+.container{
+    margin-inline: auto;
+}
+.nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-toggle{
+    display: none;
+}
+.nav-menu {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    flex: 1;
+}
+.nav-list{
+    display: flex;
+    column-gap: 5rem;
+    font-size: 18px;
+    list-style: none;
+    margin: 0; /* Remove right margin */
+    padding: 0;
+    align-items: center;
+    justify-content: center; /* Center the links within the list */
+
+}
+.nav-link a{
+    transition: all  .50s ease;
+}
+.nav-link{
+    height: 100%;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover{
+    /* background-color: ; */
+
+    color: #18697C;
+    text-shadow: 3px 3px 20px #18697C, -2px 1px 30px #18697C;
+}
+}
+
+    /* About Section */
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white; /* Set font color to white */
+        padding: 10px;
+        margin-top: 60px;
+    }
+    
+    .about h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 40px; /* Larger font for visibility */
+        color: #ffffff; /* White color for better contrast */
+        margin-top: 40px; /* Top margin for spacing */
+    }
+    
+    .about-image {
+        flex: 1;
+        margin-right: 20px; /* Reduced margin to decrease gap */
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .about-image img {
+        max-width: 100%;
+        height: 600px; /* Allow height to adjust automatically */
+        width: 600px;
+        display: block;
+        transition: transform 0.6s ease-in-out;
+    }
+    
+    .about-image:hover img {
+        transform: scale(1.1); /* Slight zoom effect on hover */
+    }
+    
+    .about-content {
+        flex: 1;
+    }
+    
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: white;
+        margin-right: 80px;
+        text-align: justify; /* Justify text to align evenly */
+        word-wrap: break-word; /* Allow words to break to the next line */
+    }
+    
+    .about-content span {
+        font-weight: bold;
+    }
+    
+    /* Responsive Styles for Medium Screens (Tablets) */
+    @media screen and (max-width: 1024px) {
+        .about {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center align items */
+            text-align: center; /* Center text within the about section */
+        margin-top: 60px;
+
+        }
+    
+        .about h1 {
+            font-size: 32px; /* Adjusted for smaller screens */
+            margin-top: 20px; /* Add some spacing above the heading */
+        }
+    
+        .about-image {
+            margin: 0; /* Remove margin for the image container */
+            margin-bottom: 20px; /* Space below the image */
+            max-width: 80%; /* Limit the image width on medium screens */
+        }
+    
+        .about-image img {
+            height: 400px; /* Set a specific height for medium screens */
+            width: 400px; /* Set a specific width for medium screens */
+            display: block; /* Ensure image is treated as block element */
+            margin: 0 auto; /* Center the image horizontally */
+        }
+    
+        .about-content {
+            display: flex; /* Enable flexbox for content alignment */
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center align items */
+            justify-content: center; /* Center content vertically */
+            width: 100%; /* Full width for the content area */
+            padding: 0 10px; /* Add some padding for better spacing */
+        }
+    
+        .about-content p {
+            font-size: 18px; /* Font size for the paragraph */
+            margin: 0; /* Remove default margin */
+            word-wrap: break-word; /* Allow words to break to the next line */
+            max-width: 90%; /* Limit the width of the paragraph for better readability */
+            text-align: justify; /* Justify text to align evenly */
+        }
+    }
+    
+    /* Responsive Styles for Mobile Screens */
+    @media screen and (max-width: 768px) {
+        .about {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center align items */
+            text-align: center; /* Center text within the about section */
+        margin-top: 60px;
+
+        }
+    
+        .about-content {
+            display: flex; /* Enable flexbox for content alignment */
+            flex-direction: column; /* Stack content vertically */
+            align-items: center; /* Center align items */
+            justify-content: center; /* Center content vertically */
+            width: 100%; /* Full width for the content area */
+        }
+    
+        .about-content p {
+            font-size: 16px; /* Font size for the paragraph */
+            margin: 0; /* Remove default margin */
+            padding: 0 10px; /* Add some padding for better spacing */
+            word-wrap: break-word; /* Allow words to break to the next line */
+            max-width: 90%; /* Limit the width of the paragraph for better readability */
+            text-align: justify; /* Justify text to align evenly */
+        }
+    
+        .about h1 {
+            font-size: 28px; /* Adjust heading size */
+            margin-top: 20px; /* Space above heading */
+        }
+    
+        .about-image {
+            max-width: 100%; /* Ensure the image takes full width on mobile */
+            margin: 0; /* Remove margins for mobile */
+        }
+    
+        .about-image img {
+            height: 200px; /* Set a specific height for mobile screens */
+            width: 200px; /* Set a specific width for mobile screens */
+        }
+    
+        /* New logo styles */
+        .about-logo {
+            margin-top: 20px; /* Space above logo */
+            width: 80%; /* Limit logo width */
+            max-width: 200px; /* Set maximum width for logo */
+        }
+    }
+    
+    /* Responsive Styles for Large Devices */
+    @media screen and (min-width: 1025px) {
+        .about h1 {
+            font-size: 50px; /* Increase heading size for large screens */
+        }
+    
+        .about-content span {
+            font-size: 20px; /* Increase span font size for large screens */
+        }
+    }</style>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-data">
+                <img src="assets/img/Geekbudslogo.jpg" alt="" class="nav-logo">
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav-burger"></i>
+                    <i class="ri-close-line nav-close"></i>
+                </div>
+            </div>
+
+            <!-- ============nav menu============ -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="main.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li><a href="service.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="about">
+        <h1>About <span>Us</span></h1>
+        <div class="about-image">
+            <img src="assets/img/Geekbudslogo.jpg" alt="About Us">
+        </div>
+        <div class="about-content">
+            <p>We are a Digital Marketing Platform built on dream, creativity,
+                and innovation at its core. We specialize in transforming ideas
+                into impactful designs, effective branding, and a powerful online presence.
+
+                At Geek Buds Design (GBD), we pride ourselves on staying ahead of
+                the curve in the ever-evolving digital world. Our approach is rooted in continuous
+                innovation and a deep understanding of industry trends, ensuring that every solution we
+                provide is not only relevant but also future-proof. Whether it’s creating responsive websites,
+                executing data-driven marketing strategies, or designing unique brand identities, we are committed
+                to helping your business stand out. With a client-first mindset, we focus on building long-term
+                relationships, providing ongoing support,
+                and adapting to your needs as your business grows. At GBD, your success is our mission.</p>
+        </div>
+    </section>
+ <!-- ==================OUR CLIENTS==================== -->
+ <div class="clients-section">
+    <h2 class="clients-heading">Our Key <br> <span>Collaborators</span></h2>
+<div class="slider">
+ <div class="slide-track">
+      <div class="slide">
+          <img src="assets/img/gbdclient1.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient2.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient3.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient4.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient5.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient6.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient7.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient8.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient9.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient10.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient11.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient12.jpg" alt="">
+      </div>
+      <div class="slide">
+          <img src="assets/img/gbdclient13.jpg" alt="">
+      </div>
+  <!-- duplicate images for looping -->
+        <div class="slide">
+            <img src="assets/img/gbdclient1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient2.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient3.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient4.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient5.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient6.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient7.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient8.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient9.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient10.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient11.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient12.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="assets/img/gbdclient13.jpg" alt="">
+        </div>
+</div>
+  </div>
+</div>
+
+  <!-- footer -->
+  <footer class="footer" id="footer">
+
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2 class="footer-logo">Geek Buds Designs</h2>
+            <p class="footer-description">
+                We are a Digital Marketing Platform built with <br> dream, creativity, & innovation at its core.
+            </p>
+            <p>Follow us at:</p>
+            <ul class="social-list">
+             
+                <li>
+                    <a href="https://www.linkedin.com/company/geek-buds-designs/" class="social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/geek_buds_designs" class="social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/geekbudsdesigns" class="social-link">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+     
+        <ul class="footer-links">
+            <p>Quick Links</p>
+            <li><a href="main.html" class="footer-link">Home</a></li>
+            <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+            <li><a href="service.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+        </ul>
+
+        <ul class="footer-services">
+            <p>Services We Offer</p>
+            <li><a href="service.html" class="footer-link">GRAPHIC DESIGNS / BRANDING</a></li>
+            <li><a href="service.html" class="footer-link">WEB DESIGN & DEVELOPMENT</a></li>
+            <li><a href="service.html" class="footer-link">DIGITAL MARKETING</a></li>
+            <li><a href="service.html" class="footer-link">SOFTWARE SOLUTION</a></li>
+            <li><a href="service.html" class="footer-link">ADVERTISE & CAMPAIGN</a></li>
+            <li><a href="service.html" class="footer-link">PRODUCTION HOUSE</a></li>
+
+        </ul>
+        <div class="footer-contact">
+            <p>Contact Us</p>
+            <address>
+                <i class="ri-map-pin-line"></i>  Bangalore, India<br>
+                <i class="ri-phone-fill"></i>  <a href="tel:+919632781673">+91 9632781673</a><br>
+                <!-- <a href="tel:+917899946007">+91 7899946007</a><br> -->
+                <i class="ri-mail-fill"></i>  <a href="mailto:geekbudsdesigns@gmail.com">geekbudsdesigns@gmail.com</a>
+            </address>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p class="copyright">
+            &copy; 2024 <a href="#" class="copyright-link">GeekBudsDesigns</a>. All Rights Reserved
+        </p>
+    </div>
+
+</footer>
+
+<!-- script gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+         <!--scrolltrigger gsap  -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- script js -->
+ <script src="assets/js/gsap.js"></script>
+            <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Geek Buds Designs">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="IN-KA">
+    <meta name="geo.placename" content="Mangalore, Bangalore">
+    <title>Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore
+    </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/Geekbudslogo.jpg" type="image/jpeg">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="assets/img/logo/logo2.svg">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta name="description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.geekbudsdesigns.com/">
+    <meta property="og:title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta property="og:description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=124E90CXqT3-KcDvSJxSIduMgnnaKRNSZ">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.geekbudsdesigns.com/">
+    <meta property="twitter:title"
+        content="Geek Buds Designs - Expert IT Services, Software Development & Digital Marketing in Mangalore & Bangalore">
+    <meta property="twitter:description"
+        content="Geek Buds Designs (GBD) is a leading IT service and consulting agency in Mangalore and Bangalore, India. We specialize in software design and development, digital marketing, graphic design, social media management, and product promotion. Get the best quality services at competitive prices.">
+    <meta property="twitter:image" content="https://www.geekbudsdesigns.com/assets/img/logo/logo2.svg">
+  
+      <!-- googlefonts -->
+      <!-- google fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;700&display=swap"
+          rel="stylesheet">
+</head>
+<style>
+    
+
+/* ====================================contact form================================= */
+.form-main {
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.main-wrapper {
+    border-radius: 10px;
+    padding: 30px;
+    width: 40%;
+    box-shadow: 0 0 5px 5px #00000020;
+    backdrop-filter: blur(5px);
+    background-color: black;
+    border: 2px solid #18697C;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-head {
+    font-size: 40px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-card {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-input,
+.form-textarea {
+    padding: 20px 25px 15px;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;  /* No background color */
+    outline: none;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease-in-out;
+    color: white; /* Set text color to white */
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    box-shadow: 0 0 10px white;
+    border-color: white;
+}
+
+/* Adjust label positioning to stay above */
+.form-label,
+.form-textarea-label {
+    position: absolute;
+    left: 25px;
+    top: -10px; /* Keep labels above input */
+    pointer-events: none;
+    font-size: 16px;
+    color: #ccc;
+    background-color: black; /* Add a background to label to avoid overlap */
+    padding: 0 4px;
+    transition: 0.3s;
+}
+
+/* Keep label above when input is focused */
+.form-input:focus ~ .form-label,
+.form-textarea:focus ~ .form-textarea-label,
+.form-input:not(:placeholder-shown) ~ .form-label,
+.form-textarea:not(:placeholder-shown) ~ .form-textarea-label {
+    top: -10px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    resize: none;
+}
+
+/* Inquiry button styling */
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0 0;
+}
+
+.btn-wrap button {
+    padding: 0 32px;
+    font-size: 18px;
+    line-height: 48px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px #00000020;
+}
+
+.btn-wrap button:hover {
+    background: white;
+    color: black;
+}
+
+/* Disabled state for Inquiry button */
+.btn-wrap button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    border: 1px solid white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .main-wrapper {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-wrapper {
+        width: 90%;
+    }
+}
+
+/* For smaller mobile screens */
+@media screen and (max-width: 480px) {
+    .form-main {
+        padding: 25px 25px;
+        margin-top: 60px;
+    }
+    .main-wrapper {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    .form-head {
+        font-size: 24px;
+    }
+    
+    .form-input, 
+    .form-textarea {
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    .btn-wrap button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+
+    /*  */
+    /* Footer Base Styling */
+.footer {
+    background-color: rgb(27, 26, 26);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: -70px;
+}
+
+.footer-description {
+    margin: 10px 0;
+    margin-left: -70px;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-list a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.footer-links,
+.footer-services {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.footer-links p,
+.footer-services p {
+    font-size: 22px;
+    text-align: center;
+}
+
+.footer-services li {
+    text-align: center;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-contact p {
+    font-size: 22px;
+    margin: 15px 0;
+    padding-left: 60px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
+
+.footer-contact address {
+    margin: 5px 0;
+    padding-left: 60px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.footer-contact address a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.copyright {
+    margin: 0;
+}
+
+.copyright-link {
+    color:white;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-services,
+    .footer-contact {
+        text-align: left;
+    }
+}
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center; /* Centers contents on small screens */
+        text-align: center; /* Ensures all content is centered on small screens */
+    }
+
+    .footer-logo,
+    .footer-description,
+    .footer-links,
+    .footer-services,
+    .footer-contact p,
+    .footer-contact address {
+        text-align: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    
+    .footer-contact p,
+    .footer-contact address {
+        font-size: 20px; /* Adjust font size for mobile */
+        line-height: 1.5;
+    }
+
+    .footer-services li {
+        text-align: center;
+    }
+
+    /* Center the social links on mobile */
+    .social-list {
+        justify-content: center; /* Centers the social icons */
+    }
+}
+
+
+
+/* scrollbar styling */
+
+::-webkit-scrollbar{
+    width: 8px;
+   
+}
+::-webkit-scrollbar-track{
+    background-color:black;
+}
+::-webkit-scrollbar-thumb{
+    background:white;
+    border-radius: 6px;
+    
+}
+</style>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-data">
+                <img src="assets/img/Geekbudslogo.jpg" alt="" class="nav-logo">
+
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav-burger"></i>
+                    <i class="ri-close-line nav-close"></i>
+                </div>
+            </div>
+
+            <!-- ============nav menu============ -->
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="main.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutus.html" class="nav-link">About</a></li>
+                    <li><a href="service.html" class="nav-link">Services</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+     <!-- ========================================contact form========================================== -->
+     <section>
+        <div class="form-main" id="contact">
+            <div class="main-wrapper">
+                <h2 class="form-head" >Connect Us</h2>
+                <form class="form-wrapper" id="contactForm">
+                    <div class="form-card">
+                        <input class="form-input" type="text" name="full_name" id="full_name" required />
+                        <label class="form-label" for="full_name">Full Name</label>
+                    </div>
+        
+                    <div class="form-card">
+                        <input class="form-input" type="email" name="email" id="email" required />
+                        <label class="form-label" for="email">Email</label>
+                    </div>
+        
+                    <div class="form-card">
+                        <input class="form-input" type="number" name="phone_number" id="phone_number" required />
+                        <label class="form-label" for="phone_number">Phone Number</label>
+                    </div>
+        
+                    <!-- New Service Select Field -->
+                    <div class="form-card">
+                        <select class="form-input" name="service" id="service" required>
+                            <option value="" disabled selected>Select Service</option>
+                            <option value="GRAPHIC DESIGNS / BRANDING">GRAPHIC DESIGNS / BRANDING</option>
+                            <option value="WEB DESIGN & DEVELOPMENT">WEB DESIGN & DEVELOPMENT</option>
+                            <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+                            <option value="SOFTWARE SOLUTION">SOFTWARE SOLUTION</option>
+                            <option value="ADVERTISE & CAMPAIGN">ADVERTISE & CAMPAIGN</option>
+                            <option value="PRODUCTION HOUSE">PRODUCTION HOUSE</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-card">
+                        <textarea class="form-textarea" maxlength="420" rows="3" name="message" id="message" required></textarea>
+                        <label class="form-textarea-label" for="message">Message</label>
+                    </div>
+        
+                    <div class="btn-wrap">
+                        <button type="button" id="inquiryButton" onclick="sendToWhatsApp()" disabled>Inquiry</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </section>
+    
+      <!-- footer -->
+    <footer class="footer" id="footer">
+    
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2 class="footer-logo">Geek Buds Designs</h2>
+                <p class="footer-description">
+                    We are a Digital Marketing Platform built with <br> dream, creativity, & innovation at its core.
+                </p>
+                <p>Follow us at:</p>
+                <ul class="social-list">
+                 
+                    <li>
+                        <a href="https://www.linkedin.com/company/geek-buds-designs/" class="social-link">
+                            <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/geek_buds_designs" class="social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/geekbudsdesigns" class="social-link">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+          
+        <ul class="footer-links">
+            <p>Quick Links</p>
+            <li><a href="main.html" class="footer-link">Home</a></li>
+            <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+            <li><a href="service.html" class="footer-link">Services</a></li>
+            <li><a href="portfolio.html" class="footer-link">Portfolio</a></li>
+        </ul>
+    
+            <ul class="footer-services">
+                <p>Services We Offer</p>
+                <li><a href="service.html" class="footer-link">GRAPHIC DESIGNS / BRANDING</a></li>
+                <li><a href="service.html" class="footer-link">WEB DESIGN & DEVELOPMENT</a></li>
+                <li><a href="service.html" class="footer-link">DIGITAL MARKETING</a></li>
+                <li><a href="service.html" class="footer-link">SOFTWARE SOLUTION</a></li>
+                <li><a href="service.html" class="footer-link">ADVERTISE & CAMPAIGN</a></li>
+                <li><a href="service.html" class="footer-link">PRODUCTION HOUSE</a></li>
+    
+            </ul>
+    
+            <div class="footer-contact">
+                <p>Contact Us</p>
+                <address>
+                    <i class="ri-map-pin-line"></i>  Bangalore, India<br>
+                    <i class="ri-phone-fill"></i>  <a href="tel:+919632781673">+91 9632781673</a><br>
+                    <!-- <a href="tel:+917899946007">+91 7899946007</a><br> -->
+                    <i class="ri-mail-fill"></i>  <a href="mailto:geekbudsdesigns@gmail.com">geekbudsdesigns@gmail.com</a>
+                </address>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p class="copyright">
+                &copy; 2024 <a href="#" class="copyright-link">GeekBudsDesigns</a>. All Rights Reserved
+            </p>
+        </div>
+    
+    </footer>
+    
+    <!-- script gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+             <!--scrolltrigger gsap  -->
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- script js -->
+     <script src="assets/js/gsap.js"></script>
+                <script src="assets/js/script.js"></script> 
+</body>
+</html>
