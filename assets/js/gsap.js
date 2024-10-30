@@ -54,21 +54,21 @@ gsap.from(".about .about-image", {
     }
 });
 
-// Animate the about content with zoom effect
 gsap.from(".about .about-content", {
-    y: 130,                  // Starts from 150px below its current position
-    scale: 0.5,              // Start scaled down to create a zoom effect
-    opacity: 0,              // Fades in as it moves to its final position
-    duration: 1.5,           // Shortened duration for a more immediate effect
-    ease: "power2.out",      // Smoother easing
+    y: 50,                   // Reduce the starting y position for a subtler effect
+    scale: 0.5,              // Adjust the scale to show more gradual zoom
+    opacity: 0.5,            // Set partial opacity for immediate visibility
+    duration: 1.2,           // Slightly shorter duration for a quicker effect
+    ease: "power2.out",
     scrollTrigger: {
         trigger: ".about .about-content",
         scroller: "body",
-        start: "top 60%",     // Start a little later to match the scroll
-        end: "top 70%",       // Keeps it active for a reasonable distance
-        scrub: 0.5,           // Less scrub for a more responsive feel
+        start: "top 80%",     // Trigger the animation earlier for more immediate visibility
+        end: "top 60%",       // Allows the animation to finish smoothly
+        scrub: 0.3,           // Faster scrub for quicker response
     }
 });
+
 
 
 gsap.from(".service h1", {
